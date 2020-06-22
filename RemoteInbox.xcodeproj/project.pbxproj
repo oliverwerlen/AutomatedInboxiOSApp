@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E46FE42B24A10A61007CE082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46FE42A24A10A61007CE082 /* AppDelegate.swift */; };
+		E46FE42E24A10A61007CE082 /* RemoteInbox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E46FE42C24A10A61007CE082 /* RemoteInbox.xcdatamodeld */; };
+		E46FE43024A10A61007CE082 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46FE42F24A10A61007CE082 /* SceneDelegate.swift */; };
+		E46FE43224A10A61007CE082 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46FE43124A10A61007CE082 /* MasterViewController.swift */; };
+		E46FE43424A10A61007CE082 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46FE43324A10A61007CE082 /* DetailViewController.swift */; };
+		E46FE43724A10A61007CE082 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46FE43524A10A61007CE082 /* Main.storyboard */; };
+		E46FE43924A10A63007CE082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46FE43824A10A63007CE082 /* Assets.xcassets */; };
+		E46FE43C24A10A63007CE082 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46FE43A24A10A63007CE082 /* LaunchScreen.storyboard */; };
+		E46FE44724A10A63007CE082 /* RemoteInboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46FE44624A10A63007CE082 /* RemoteInboxTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E46FE44324A10A63007CE082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E46FE41F24A10A61007CE082 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E46FE42624A10A61007CE082;
+			remoteInfo = RemoteInbox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E46FE42724A10A61007CE082 /* RemoteInbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteInbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E46FE42A24A10A61007CE082 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E46FE42D24A10A61007CE082 /* RemoteInbox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RemoteInbox.xcdatamodel; sourceTree = "<group>"; };
+		E46FE42F24A10A61007CE082 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E46FE43124A10A61007CE082 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		E46FE43324A10A61007CE082 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E46FE43624A10A61007CE082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E46FE43824A10A63007CE082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E46FE43B24A10A63007CE082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E46FE43D24A10A63007CE082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E46FE44224A10A63007CE082 /* RemoteInboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteInboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E46FE44624A10A63007CE082 /* RemoteInboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteInboxTests.swift; sourceTree = "<group>"; };
+		E46FE44824A10A63007CE082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E46FE42424A10A61007CE082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46FE43F24A10A63007CE082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E46FE41E24A10A61007CE082 = {
+			isa = PBXGroup;
+			children = (
+				E46FE42924A10A61007CE082 /* RemoteInbox */,
+				E46FE44524A10A63007CE082 /* RemoteInboxTests */,
+				E46FE42824A10A61007CE082 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E46FE42824A10A61007CE082 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E46FE42724A10A61007CE082 /* RemoteInbox.app */,
+				E46FE44224A10A63007CE082 /* RemoteInboxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E46FE42924A10A61007CE082 /* RemoteInbox */ = {
+			isa = PBXGroup;
+			children = (
+				E46FE42A24A10A61007CE082 /* AppDelegate.swift */,
+				E46FE42F24A10A61007CE082 /* SceneDelegate.swift */,
+				E46FE43124A10A61007CE082 /* MasterViewController.swift */,
+				E46FE43324A10A61007CE082 /* DetailViewController.swift */,
+				E46FE43524A10A61007CE082 /* Main.storyboard */,
+				E46FE43824A10A63007CE082 /* Assets.xcassets */,
+				E46FE43A24A10A63007CE082 /* LaunchScreen.storyboard */,
+				E46FE43D24A10A63007CE082 /* Info.plist */,
+				E46FE42C24A10A61007CE082 /* RemoteInbox.xcdatamodeld */,
+			);
+			path = RemoteInbox;
+			sourceTree = "<group>";
+		};
+		E46FE44524A10A63007CE082 /* RemoteInboxTests */ = {
+			isa = PBXGroup;
+			children = (
+				E46FE44624A10A63007CE082 /* RemoteInboxTests.swift */,
+				E46FE44824A10A63007CE082 /* Info.plist */,
+			);
+			path = RemoteInboxTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E46FE42624A10A61007CE082 /* RemoteInbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E46FE44B24A10A63007CE082 /* Build configuration list for PBXNativeTarget "RemoteInbox" */;
+			buildPhases = (
+				E46FE42324A10A61007CE082 /* Sources */,
+				E46FE42424A10A61007CE082 /* Frameworks */,
+				E46FE42524A10A61007CE082 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemoteInbox;
+			productName = RemoteInbox;
+			productReference = E46FE42724A10A61007CE082 /* RemoteInbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E46FE44124A10A63007CE082 /* RemoteInboxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E46FE44E24A10A63007CE082 /* Build configuration list for PBXNativeTarget "RemoteInboxTests" */;
+			buildPhases = (
+				E46FE43E24A10A63007CE082 /* Sources */,
+				E46FE43F24A10A63007CE082 /* Frameworks */,
+				E46FE44024A10A63007CE082 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E46FE44424A10A63007CE082 /* PBXTargetDependency */,
+			);
+			name = RemoteInboxTests;
+			productName = RemoteInboxTests;
+			productReference = E46FE44224A10A63007CE082 /* RemoteInboxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E46FE41F24A10A61007CE082 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Oliver Werlen";
+				TargetAttributes = {
+					E46FE42624A10A61007CE082 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					E46FE44124A10A63007CE082 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E46FE42624A10A61007CE082;
+					};
+				};
+			};
+			buildConfigurationList = E46FE42224A10A61007CE082 /* Build configuration list for PBXProject "RemoteInbox" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E46FE41E24A10A61007CE082;
+			productRefGroup = E46FE42824A10A61007CE082 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E46FE42624A10A61007CE082 /* RemoteInbox */,
+				E46FE44124A10A63007CE082 /* RemoteInboxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E46FE42524A10A61007CE082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46FE43C24A10A63007CE082 /* LaunchScreen.storyboard in Resources */,
+				E46FE43924A10A63007CE082 /* Assets.xcassets in Resources */,
+				E46FE43724A10A61007CE082 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46FE44024A10A63007CE082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E46FE42324A10A61007CE082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46FE43224A10A61007CE082 /* MasterViewController.swift in Sources */,
+				E46FE42E24A10A61007CE082 /* RemoteInbox.xcdatamodeld in Sources */,
+				E46FE43424A10A61007CE082 /* DetailViewController.swift in Sources */,
+				E46FE42B24A10A61007CE082 /* AppDelegate.swift in Sources */,
+				E46FE43024A10A61007CE082 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46FE43E24A10A63007CE082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46FE44724A10A63007CE082 /* RemoteInboxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E46FE44424A10A63007CE082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E46FE42624A10A61007CE082 /* RemoteInbox */;
+			targetProxy = E46FE44324A10A63007CE082 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E46FE43524A10A61007CE082 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E46FE43624A10A61007CE082 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E46FE43A24A10A63007CE082 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E46FE43B24A10A63007CE082 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E46FE44924A10A63007CE082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E46FE44A24A10A63007CE082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E46FE44C24A10A63007CE082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W6H8U43VDD;
+				INFOPLIST_FILE = RemoteInbox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hslu.RemoteInbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E46FE44D24A10A63007CE082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W6H8U43VDD;
+				INFOPLIST_FILE = RemoteInbox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hslu.RemoteInbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E46FE44F24A10A63007CE082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W6H8U43VDD;
+				INFOPLIST_FILE = RemoteInboxTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hslu.RemoteInboxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemoteInbox.app/RemoteInbox";
+			};
+			name = Debug;
+		};
+		E46FE45024A10A63007CE082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W6H8U43VDD;
+				INFOPLIST_FILE = RemoteInboxTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hslu.RemoteInboxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemoteInbox.app/RemoteInbox";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E46FE42224A10A61007CE082 /* Build configuration list for PBXProject "RemoteInbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E46FE44924A10A63007CE082 /* Debug */,
+				E46FE44A24A10A63007CE082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E46FE44B24A10A63007CE082 /* Build configuration list for PBXNativeTarget "RemoteInbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E46FE44C24A10A63007CE082 /* Debug */,
+				E46FE44D24A10A63007CE082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E46FE44E24A10A63007CE082 /* Build configuration list for PBXNativeTarget "RemoteInboxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E46FE44F24A10A63007CE082 /* Debug */,
+				E46FE45024A10A63007CE082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E46FE42C24A10A61007CE082 /* RemoteInbox.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E46FE42D24A10A61007CE082 /* RemoteInbox.xcdatamodel */,
+			);
+			currentVersion = E46FE42D24A10A61007CE082 /* RemoteInbox.xcdatamodel */;
+			path = RemoteInbox.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E46FE41F24A10A61007CE082 /* Project object */;
+}
