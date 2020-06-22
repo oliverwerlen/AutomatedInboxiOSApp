@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C212354F0A50147C051AEDC0 /* Pods_RemoteInbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251EFAE958390CC5FCA71BD4 /* Pods_RemoteInbox.framework */; };
+		DC726932141A536BCE283D0A /* Pods_RemoteInboxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C2639F9B717FF3562477EBF /* Pods_RemoteInboxTests.framework */; };
 		E46FE42B24A10A61007CE082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46FE42A24A10A61007CE082 /* AppDelegate.swift */; };
 		E46FE42E24A10A61007CE082 /* RemoteInbox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E46FE42C24A10A61007CE082 /* RemoteInbox.xcdatamodeld */; };
 		E46FE43024A10A61007CE082 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46FE42F24A10A61007CE082 /* SceneDelegate.swift */; };
@@ -29,6 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C2639F9B717FF3562477EBF /* Pods_RemoteInboxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteInboxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		251EFAE958390CC5FCA71BD4 /* Pods_RemoteInbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteInbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6950E43C1DFE054DCFD03A86 /* Pods-RemoteInboxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteInboxTests.debug.xcconfig"; path = "Target Support Files/Pods-RemoteInboxTests/Pods-RemoteInboxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B385A015C9EA2E9622DEC6B3 /* Pods-RemoteInbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteInbox.debug.xcconfig"; path = "Target Support Files/Pods-RemoteInbox/Pods-RemoteInbox.debug.xcconfig"; sourceTree = "<group>"; };
+		B68818E2743DFD1448E0CFEA /* Pods-RemoteInbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteInbox.release.xcconfig"; path = "Target Support Files/Pods-RemoteInbox/Pods-RemoteInbox.release.xcconfig"; sourceTree = "<group>"; };
+		CB6D0A278516C0A2F6DD8D0B /* Pods-RemoteInboxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteInboxTests.release.xcconfig"; path = "Target Support Files/Pods-RemoteInboxTests/Pods-RemoteInboxTests.release.xcconfig"; sourceTree = "<group>"; };
 		E46FE42724A10A61007CE082 /* RemoteInbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteInbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46FE42A24A10A61007CE082 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E46FE42D24A10A61007CE082 /* RemoteInbox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RemoteInbox.xcdatamodel; sourceTree = "<group>"; };
@@ -49,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C212354F0A50147C051AEDC0 /* Pods_RemoteInbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,18 +65,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC726932141A536BCE283D0A /* Pods_RemoteInboxTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CBA7D84E72BAA8601F0D5EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B385A015C9EA2E9622DEC6B3 /* Pods-RemoteInbox.debug.xcconfig */,
+				B68818E2743DFD1448E0CFEA /* Pods-RemoteInbox.release.xcconfig */,
+				6950E43C1DFE054DCFD03A86 /* Pods-RemoteInboxTests.debug.xcconfig */,
+				CB6D0A278516C0A2F6DD8D0B /* Pods-RemoteInboxTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2A9D2FF2D376D0C297DD8256 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				251EFAE958390CC5FCA71BD4 /* Pods_RemoteInbox.framework */,
+				1C2639F9B717FF3562477EBF /* Pods_RemoteInboxTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E46FE41E24A10A61007CE082 = {
 			isa = PBXGroup;
 			children = (
 				E46FE42924A10A61007CE082 /* RemoteInbox */,
 				E46FE44524A10A63007CE082 /* RemoteInboxTests */,
 				E46FE42824A10A61007CE082 /* Products */,
+				0CBA7D84E72BAA8601F0D5EC /* Pods */,
+				2A9D2FF2D376D0C297DD8256 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E46FE44B24A10A63007CE082 /* Build configuration list for PBXNativeTarget "RemoteInbox" */;
 			buildPhases = (
+				721CEE944E0D80D23F0268B3 /* [CP] Check Pods Manifest.lock */,
 				E46FE42324A10A61007CE082 /* Sources */,
 				E46FE42424A10A61007CE082 /* Frameworks */,
 				E46FE42524A10A61007CE082 /* Resources */,
+				43E78E413A2C4C13DCB9425A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +164,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E46FE44E24A10A63007CE082 /* Build configuration list for PBXNativeTarget "RemoteInboxTests" */;
 			buildPhases = (
+				4B6B764517429CAA1BE2963D /* [CP] Check Pods Manifest.lock */,
 				E46FE43E24A10A63007CE082 /* Sources */,
 				E46FE43F24A10A63007CE082 /* Frameworks */,
 				E46FE44024A10A63007CE082 /* Resources */,
@@ -200,6 +236,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43E78E413A2C4C13DCB9425A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RemoteInbox/Pods-RemoteInbox-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RemoteInbox/Pods-RemoteInbox-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RemoteInbox/Pods-RemoteInbox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B6B764517429CAA1BE2963D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RemoteInboxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		721CEE944E0D80D23F0268B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RemoteInbox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E46FE42324A10A61007CE082 /* Sources */ = {
@@ -368,6 +468,7 @@
 		};
 		E46FE44C24A10A63007CE082 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B385A015C9EA2E9622DEC6B3 /* Pods-RemoteInbox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -386,6 +487,7 @@
 		};
 		E46FE44D24A10A63007CE082 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B68818E2743DFD1448E0CFEA /* Pods-RemoteInbox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -404,6 +506,7 @@
 		};
 		E46FE44F24A10A63007CE082 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6950E43C1DFE054DCFD03A86 /* Pods-RemoteInboxTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -426,6 +529,7 @@
 		};
 		E46FE45024A10A63007CE082 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB6D0A278516C0A2F6DD8D0B /* Pods-RemoteInboxTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

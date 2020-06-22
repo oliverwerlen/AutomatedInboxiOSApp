@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import RMQClient
 
 class MasterViewController: UITableViewController, NSFetchedResultsControllerDelegate {
 
@@ -19,6 +20,8 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         navigationItem.leftBarButtonItem = editButtonItem
+        self.send()
+        self.receive()
 
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
         navigationItem.rightBarButtonItem = addButton
@@ -27,7 +30,30 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
     }
+    func send() {
+        print("Attempting to connect to local RabbitMQ broker")
+        let conn = RMQConnection(uri: "amqp://admin:admin@192.168.1.124:5672",
+        delegate: RMQConnectionDelegateLogger())
+        conn.start()
+        let ch = conn.createChannel()
+        let q = ch.queue("hello")
+        ch.defaultExchange().publish("Hello World!".data(using: .utf8)!, routingKey: q.name)
+        print("Sent 'Hello World!'")
+        conn.close()
+    }
 
+    func receive() {
+        print("Attempting to connect to local RabbitMQ broker")
+        let conn = RMQConnection(uri: "amqp://admin:admin@192.168.1.124:5672",
+        delegate: RMQConnectionDelegateLogger())
+        conn.start()
+        let ch = conn.createChannel()
+        let q = ch.queue("hello")
+        print("Waiting for messages.")
+        q.subscribe({(_ message: RMQMessage) -> Void in
+            print("Received \(String(data: message.body, encoding: String.Encoding.utf8)!)")
+        })
+    }
     override func viewWillAppear(_ animated: Bool) {
         clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
         super.viewWillAppear(animated)
